@@ -11,7 +11,7 @@ export default class GameSelector extends Component {
     render() {
         return (
                 <div>
-                    <h1>Select a Game</h1>
+                   {this.props.firstGame ?<h1>Select a Game</h1> : <h1>Try Again?</h1> } 
                     <button id="coin" onClick={this.handleClick}>
                         Coin
                     </button>

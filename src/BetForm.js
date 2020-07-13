@@ -24,9 +24,9 @@ export default class BetForm extends Component {
     handleSubmit(e){
         e.preventDefault()
         this.props.setBet(Number(this.state.bet))
+        this.props.toggleBet()
     }
     render() {
-        console.log(this.props)
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
