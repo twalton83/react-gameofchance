@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import DiceGame from './DiceGame'
 import CoinGame from './CoinGame'
 import GameSelector from './GameSelector'
+import './App.css'
 
 export default class Game extends Component {
     constructor(props){
@@ -61,13 +62,13 @@ export default class Game extends Component {
     render() {
         let game;
         if(this.state.gametype === 'dice'){
-            game = <DiceGame 
+            game = <DiceGame className= "Dice"
             finishGame = {this.finishGame}
             setBet={this.setBet} 
             totalCoins= {this.state.totalCoins}
             />
         } else if (this.state.gametype === 'coin'){
-            game = <CoinGame
+            game = <CoinGame className="Coin"
             finishGame = {this.finishGame}
             setBet={this.setBet}  
             totalCoins= {this.state.totalCoins}
@@ -78,9 +79,12 @@ export default class Game extends Component {
             firstGame = {this.state.firstGame} gamePicker = {this.gamePicker}/>
         }
         return (
-            <div>
+            <div className="Game">
                 <h1>Game of Chance</h1>
-                <p>Total Coins: {this.state.totalCoins}</p>
+                <div className="coins">
+                    <img className="coinGif" src={require("./pixel-coin-png-4.gif")} alt="gif of coin"></img>
+                    <p>{this.state.totalCoins}g</p>
+                </div>
                 <p>{this.state.winnerMessage}</p>
                 {this.state.bet > 0 && <p>Bet: {this.state.bet}</p>}
                 {game}

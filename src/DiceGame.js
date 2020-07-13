@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import BetForm from './BetForm';
 import NumberChoice from './NumberChoice';
 import {diceRoll} from './helpers';
+import './App.css'
 
 export default class DiceGame extends Component {
     constructor(props){
@@ -21,6 +22,7 @@ export default class DiceGame extends Component {
         const computerPlay = diceRoll()
         console.log(computerPlay, "computer")
         console.log(playerChoice, "player")
+        // eslint-disable-next-line eqeqeq
         if(playerChoice == computerPlay){
             this.props.finishGame(true, computerPlay)
         } else {
@@ -30,7 +32,7 @@ export default class DiceGame extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="DiceGame">
                 <h1>dice Game</h1>
                 {this.state.betting && 
                 <BetForm toggleBet = {this.toggleBet} 

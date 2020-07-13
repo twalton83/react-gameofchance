@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './App.css'
 
 export default class NumberChoice extends Component {
     constructor(props){
@@ -13,32 +14,39 @@ export default class NumberChoice extends Component {
     render() {
         const coinChoices = (
             <div>
-                <button onClick={this.handleClick} value="heads">
+                <button className="gameChoiceButton" onClick={this.handleClick} value="heads">
                     Heads
                 </button>
-                <button onClick={this.handleClick} value = "tails">
+                <button className="gameChoiceButton"
+                onClick={this.handleClick} value = "tails">
                     Tails
                 </button>
             </div>
         )
         const diceChoices = (
             <div className="">
-                <button onClick={this.handleClick} value = "1">
+                <button className="gameChoiceButton"
+                onClick={this.handleClick} value = "1">
                     1
                 </button>
-                <button onClick={this.handleClick} value = "2">
+                <button className="gameChoiceButton"
+                onClick={this.handleClick} value = "2">
                     2
                 </button>
-                <button onClick={this.handleClick} value = "3">
+                <button className="gameChoiceButton"
+                onClick={this.handleClick} value = "3">
                     3
                 </button>
-                <button onClick={this.handleClick} value = "4">
+                <button className="gameChoiceButton"
+                onClick={this.handleClick} value = "4">
                     4
                 </button>
-                <button onClick={this.handleClick} value = "5">
+                <button className="gameChoiceButton"
+                onClick={this.handleClick} value = "5">
                     5
                 </button>
-                <button onClick={this.handleClick} value = "6">
+                <button className="gameChoiceButton"
+                onClick={this.handleClick} value = "6">
                     6
                 </button>
             </div>

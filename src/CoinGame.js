@@ -3,6 +3,7 @@ import BetForm from './BetForm';
 import NumberChoice from './NumberChoice.js'
 import {coinFlip} from './helpers.js';
 
+import './App.css'
 export default class CoinGame extends Component {
     constructor(props){
         super(props)
@@ -30,7 +31,7 @@ export default class CoinGame extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="CoinGame">
                 <h1>Coin Game</h1>
                 {this.state.betting && 
                 <BetForm toggleBet = {this.toggleBet} 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './App.css'
 export default class BetForm extends Component {
     constructor(props){
         super(props)
@@ -33,7 +33,7 @@ export default class BetForm extends Component {
                    
                     <label htmlFor="bet">What is your bet? </label>
                     <input type="number" name="bet" id="bet" onChange={ this.handleChange}/>
-                    <button>Submit Bet</button>
+                    <button className="submitButton">Submit Bet</button>
                 </form>
             </div>
         )

@@ -1,38 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .App {
   text-align: center;
+  background-color:cornflowerblue;
+  height: 100vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Press Start 2P', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Game {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
+}
+
+.DiceGame{
+  background-color: red;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  -webkit-box-shadow: -8px 10px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px 10px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: -8px 10px 2px 0px rgba(0,0,0,0.75);
+}
+
+.CoinGame{
+  background-color: green;
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  -webkit-box-shadow: -8px 10px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -8px 10px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: -8px 10px 2px 0px rgba(0,0,0,0.75);
+}
+
+.coinGif{
+  height: 3rem;
+  width: auto;
+
+}
+
+.coins {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px dashed black;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.coins p{
+  font-size: 1.2rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gameChoiceButton {
+  height: 3rem;
+  width: 5rem;
+  border: 3px dashed black;
+  margin: 1rem;
+}
+
+.submitButton{
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  background-color: lightgoldenrodyellow
+}
+
+input{
+  border: 1px solid transparent;
+  margin-top: 1rem;
 }
