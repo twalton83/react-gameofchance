@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-gameofchance/static/css/main.7ec7d247.chunk.css",
+    "main.js": "/react-gameofchance/static/js/main.f5357ac8.chunk.js",
+    "main.js.map": "/react-gameofchance/static/js/main.f5357ac8.chunk.js.map",
+    "runtime-main.js": "/react-gameofchance/static/js/runtime-main.038e7e60.js",
+    "runtime-main.js.map": "/react-gameofchance/static/js/runtime-main.038e7e60.js.map",
+    "static/js/2.94316aef.chunk.js": "/react-gameofchance/static/js/2.94316aef.chunk.js",
+    "static/js/2.94316aef.chunk.js.map": "/react-gameofchance/static/js/2.94316aef.chunk.js.map",
+    "index.html": "/react-gameofchance/index.html",
+    "precache-manifest.7dfe5f6eac86facb4cefc8d92ad2378f.js": "/react-gameofchance/precache-manifest.7dfe5f6eac86facb4cefc8d92ad2378f.js",
+    "service-worker.js": "/react-gameofchance/service-worker.js",
+    "static/css/main.7ec7d247.chunk.css.map": "/react-gameofchance/static/css/main.7ec7d247.chunk.css.map",
+    "static/js/2.94316aef.chunk.js.LICENSE.txt": "/react-gameofchance/static/js/2.94316aef.chunk.js.LICENSE.txt",
+    "static/media/pixel-coin-png-4.gif": "/react-gameofchance/static/media/pixel-coin-png-4.edf254ee.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.038e7e60.js",
+    "static/js/2.94316aef.chunk.js",
+    "static/css/main.7ec7d247.chunk.css",
+    "static/js/main.f5357ac8.chunk.js"
+  ]
+}
